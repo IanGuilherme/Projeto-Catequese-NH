@@ -1,18 +1,29 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block title %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'img/logo.png' %}"/>
+
+    {% block titulo %}
     <title>Catequese NH</title>
-    {% endblock title %}
+    {% endblock titulo %}
 </head>
 <body>
-    {% block header %} {% endblock header %} <!-- Cabeçalho -->
+    {% block cabecalho %} <!-- Cabeçalho -->
+    <div id="Cabecalho_fundo">
+        <img src="{% static 'img/logo.png' %}" alt="" id="ImgLogo">
+        <p class="Titulos" id="Titulo">Capela Nossa Senhora da Imaculada Conceição Aparecida</p>
+        <p class="Titulos" id="Subtitulo">Pastoral da Iniciação Cristã - Comunidade Novo Horizonte</p>
+    </div>
+    {% endblock cabecalho %} 
 
-    {% block content %} {% endblock content %} <!-- Conteúdo -->
+    {% block conteudo %} {% endblock conteudo %} <!-- Conteúdo -->
     
-    {% block footer %} {% endblock footer %} <!-- Rodapé -->
+    {% block rodape %} {% endblock rodape %} <!-- Rodapé -->
 </body>
 </html>

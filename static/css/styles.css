@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/** Cabeçalho **/
+#Cabecalho_fundo {
+  background-color: #80AED5;
+  height: 200px;
+  width: 100%;
+  box-shadow: 0px 2px 4px  rgba(0, 0, 0, 0.25);
+}
+
+.Titulos {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  color: #003676;
+}
+
+#Titulo {
+  left: clamp(19%,6vw,3rem); /*270*/
+  top: 50px;
+  font-size: clamp(1rem, 2.6vw, 3rem);
+  line-height: 47px;
+}
+
+#Subtitulo {
+  left: clamp(23%,5vw,3rem);/*340px;*/
+  top: 115px;
+  font-size: clamp(0.5rem, 2.28vw, 2.6rem); /*35px*/
+  line-height: 41px;
+}
+
+#ImgLogo {
+  position: absolute;
+  width: 141px;
+  height: 140px;
+  left: 60px;
+  top: 26px;
+  border: 5px solid #FCCB29;
+  border-radius: 90px;
+}
