@@ -45,3 +45,88 @@ html {
   border: 5px solid #FCCB29;
   border-radius: 90px;
 }
+
+/** Tópicos de navegação **/
+
+#Topico {
+  width: 100%;
+  height: 55px;
+  left: 0px;
+  top: 198px;
+  background: #BFD7EA;
+  }
+  
+.TexBot {
+color: #003676;
+text-align: center;
+font-size: 20px;
+line-height: 29px;
+
+background: #9FC3DF;
+border: 1px solid #5D5FEF;
+box-sizing: border-box;
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+position: absolute;
+top: 210px;
+height: 35px;
+}
+
+a:hover {
+cursor: pointer;
+opacity: 0.8;
+background-color: rgba(255, 255, 255, 0.2); 
+}
+
+#BotInicio {width: 75px; left: 169px;}
+
+#BotQuemSomos {width: 162px; left: 310.8px;}
+
+#BotInscricoes {width: 130px; left: 983.2px;}
+
+#BotContatos {width: 120px; left: 1180px;}
+
+#BotTurmas {width: 100px; left: 539.6px;}
+#BotTurmas:focus~ul  {height: 200px;}
+
+#BotProjEvent {width: 217px; left: 703px;}
+#BotProjEvent:focus~ul  {height: 120px;}
+
+/** Menus **/
+.TextMenu {
+  position: relative;
+  font-size: 25px;
+  
+  line-height: 1.5;
+  top:10px;
+  left: -15px;
+  right: 0px;
+  text-align: center;
+  color: #003676;
+  }
+
+.ulMenus {
+list-style: none;
+position: absolute;
+padding: 500;
+overflow: hidden;
+transition: all .75s;
+display: flex;
+top:255px;
+margin-left: 50vh;
+margin-right: 50vh;
+height: 0px;
+flex-direction: column;
+background-color:#80AED5;
+border-radius: 20px;
+}
+
+#ulTurmas {
+left: 6vw;
+}
+
+#ulProjEvent {
+left: 24vw;
+}
+  

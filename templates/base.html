@@ -14,16 +14,56 @@
     {% endblock titulo %}
 </head>
 <body>
-    {% block cabecalho %} <!-- Cabeçalho -->
+    {% block cabecalho %} 
+    <!-- Cabeçalho -->
     <div id="Cabecalho_fundo">
         <img src="{% static 'img/logo.png' %}" alt="" id="ImgLogo">
         <p class="Titulos" id="Titulo">Capela Nossa Senhora da Imaculada Conceição Aparecida</p>
         <p class="Titulos" id="Subtitulo">Ministério da Iniciação Cristã - Comunidade Novo Horizonte</p>
     </div>
+
+    <!-- Tópicos de navegação -->
+    <div id="Topico">
+        <a href="{% url 'home' %}"><button type="button" id="BotInicio" class="TexBot">Inicio</button></a>
+
+        <a href="{% url 'quem_somos' %}"><button type="button" id="BotQuemSomos" class="TexBot">Quem Somos</button></a>
+        
+        <a href="{% url 'inscricoes' %}"><button type="button" id="BotInscricoes" class="TexBot">Inscrições</button></a>
+
+        <a href="#Cont"><button type="button" id="BotContatos" class="TexBot">Contatos</button></a>
+
+        <!-- Menus de navegação -->
+        <div>
+            <button type="button" id="BotTurmas" class="TexBot">Turmas</button>
+            <ul id="ulTurmas" class="ulMenus">
+                <li><a href="{% url 'catequese_infantil' %}"><p class="TextMenu">Catequese Infantil</p></a></li>
+
+                <li><a href="{% url 'eucaristia' %}"><p class="TextMenu">Eucaristia</p></a></li>
+
+                <li><a href="{% url 'perseveranca' %}"><p class="TextMenu">Perseverança</p></a></li>
+
+                <li><a href="{% url 'crisma' %}"><p class="TextMenu">Crisma</p></a></li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" id="BotProjEvent" class="TexBot">Projetos e eventos</button>
+            <ul id="ulProjEvent" class="ulMenus">
+                <li><a href="{% url 'projetos' %}"><p class="TextMenu">Projetos</p></a></li>
+    
+                <li><a href="{% url 'eventos' %}"><p class="TextMenu">Eventos</p></a></li>
+            </ul>
+        </div>
+    </div>
     {% endblock cabecalho %} 
 
-    {% block conteudo %} {% endblock conteudo %} <!-- Conteúdo -->
+
+    {% block conteudo %} <!-- Conteúdo -->
     
-    {% block rodape %} {% endblock rodape %} <!-- Rodapé -->
+    {% endblock conteudo %} 
+    
+
+    {% block rodape %} <!-- Rodapé -->
+    
+    {% endblock rodape %} 
 </body>
 </html>
